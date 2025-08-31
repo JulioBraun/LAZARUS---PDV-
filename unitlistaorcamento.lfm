@@ -1,8 +1,0 @@
-object FormlistOrcamento: TFormlistOrcamento
-  Left = 671
-  Height = 334
-  Top = 371
-  Width = 794
-  Caption = 'Lista de Orçamentos'
-  LCLVersion = '4.0.0.4'
-end
