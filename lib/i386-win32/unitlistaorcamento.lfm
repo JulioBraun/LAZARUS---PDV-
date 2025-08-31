@@ -1,0 +1,8 @@
+object FormListaOrcamento: TFormListaOrcamento
+  Left = 556
+  Height = 348
+  Top = 152
+  Width = 651
+  Caption = 'Lista Orçamento'
+  LCLVersion = '4.0.0.4'
+end

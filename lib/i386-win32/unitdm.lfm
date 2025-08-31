@@ -1,0 +1,116 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 653
+  HorizontalOffset = 978
+  VerticalOffset = 133
+  Width = 449
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    ClientCodepage = 'ISO8859_1'
+    Properties.Strings = (
+      'AutoEncodeStrings='
+      'RawStringEncoding=DB_CP'
+      'codepage=ISO8859_1'
+    )
+    Connected = True
+    AfterConnect = ZConnection1AfterConnect
+    DisableSavepoints = False
+    HostName = '192.168.200.1'
+    Port = 3306
+    Database = 'estoquedb'
+    User = 'admin'
+    Password = 'Jbraun@2025'
+    Protocol = 'mysql'
+    LibraryLocation = 'E:\LIBMYSQL.DLL'
+    Left = 48
+    Top = 32
+  end
+  object DataSourceCliente: TDataSource
+    DataSet = ZQueryCliente
+    Left = 40
+    Top = 112
+  end
+  object ZQueryCliente: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 139
+    Top = 112
+  end
+  object ZQueryAux: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 139
+    Top = 208
+  end
+  object DataSourceAux: TDataSource
+    DataSet = ZQueryAux
+    Left = 40
+    Top = 192
+  end
+  object ZQueryProduto: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 139
+    Top = 277
+  end
+  object DataSourceProduto: TDataSource
+    DataSet = ZQueryProduto
+    Left = 40
+    Top = 264
+  end
+  object ZQueryVendas: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 120
+    Top = 568
+  end
+  object DataSourceVendas: TDataSource
+    DataSet = ZQueryVendas
+    Left = 40
+    Top = 568
+  end
+  object ZQueryItem: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 304
+    Top = 584
+  end
+  object DataSourceItem: TDataSource
+    DataSet = ZQueryItem
+    Left = 216
+    Top = 584
+  end
+  object ZQueryOrcamento: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 139
+    Top = 352
+  end
+  object DataSourceOrcamento: TDataSource
+    DataSet = ZQueryOrcamento
+    Left = 40
+    Top = 336
+  end
+  object ZQueryItemOrcamento: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 152
+    Top = 416
+  end
+  object DataSourceItemOrcamento: TDataSource
+    DataSet = ZQueryItemOrcamento
+    Left = 40
+    Top = 416
+  end
+  object ZQueryUsuarios: TZQuery
+    Connection = ZConnection1
+    Params = <>
+    Left = 240
+    Top = 32
+  end
+  object DataSourceUsuarios: TDataSource
+    DataSet = ZQueryUsuarios
+    Left = 368
+    Top = 32
+  end
+end
