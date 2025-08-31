@@ -1,0 +1,58 @@
+object FormListaOrcamento: TFormListaOrcamento
+  Left = 624
+  Height = 348
+  Top = 296
+  Width = 773
+  Caption = 'Lista Orçamento'
+  ClientHeight = 348
+  ClientWidth = 773
+  LCLVersion = '4.0.0.4'
+  OnShow = FormShow
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 24
+    Width = 65
+    Caption = 'Orçamentos'
+  end
+  object DBGrid1: TDBGrid
+    Left = 32
+    Height = 139
+    Top = 64
+    Width = 673
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'ID'
+        Width = 60
+        FieldName = 'IDVENDA'
+      end    
+      item
+        Title.Caption = 'CLIENTE'
+        Width = 150
+        FieldName = 'NOME_CLIENTE'
+      end    
+      item
+        Title.Caption = 'DATA'
+        Width = 100
+        FieldName = 'DATA'
+      end    
+      item
+        Title.Caption = 'VALOR TOTAL'
+        Width = 150
+        FieldName = 'VALORTOTAL'
+      end    
+      item
+        Title.Caption = 'DESCONTO '
+        Width = 80
+        FieldName = 'DESCONTO '
+      end    
+      item
+        Title.Caption = 'VALOR FINAL '
+        Width = 100
+        FieldName = 'VALORPAGO'
+      end>
+    DataSource = DM.DataSourceOrcamento
+    TabOrder = 0
+  end
+end
